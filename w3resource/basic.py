@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 # ESTE ARCHIVO CONTIENE LAS PRACTICAS LIBRES DEL W3RESOURCE
 # PROGRAMANDO EN PYTHON 
-=======
-# ESTE ARCHIVO CONTIENELAS PRACTICAS LIBRES DEL W3RESOURCE
-# PROGAMANDO EN PYTHON 
->>>>>>> b0e206e5898a0af7eb1d66f02103a8ee72ca6abf
 # NELSON JAVIER SALGUERO (njsocode@gmail.com)
 
 #Imprime la verison del Python
@@ -22,15 +17,8 @@
 # tupla=eval(numeros)
 # print (lista," ", type(lista))
 # print (tupla," ", type(tupla))
-<<<<<<< HEAD
 ####Este cambio lo hice en rama titulobonito en la misma linea de en Master
 #Muestra la extencion d eun archivo introducido
-=======
-
-####Este cambio lo hice en rama titulobonito en la misma linea de en Master
-#Muestra la extencion d eun archivo introducido
-
->>>>>>> b0e206e5898a0af7eb1d66f02103a8ee72ca6abf
 # archivo=input("Intro el nombre del archivo con su extención: ")
 # control=0
 # extencion=''
@@ -49,3 +37,4 @@
 # le cambie nombre al file y commit <--
 # Creare una nueva rama y le voy a agregar algo arriba bonito  
 # punto antes de crear rama para cambios
+# Cambio para subir despues de crear llaves
