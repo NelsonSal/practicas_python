@@ -1,3 +1,7 @@
+# ESTE ARCHIVO CONTIENELAS PRACTICAS LIBRES DEL W3RESOURCE
+# PROGAMANDO EN PYTHON 
+# NELSON JAVIER SALGUERO (njsocode@gmail.com)
+
 #Imprime la verison del Python
 # import sys
 # print ("MI VERSION DE PYTON ES: ", sys.version, sys.version_info)
@@ -6,7 +10,7 @@
 # from datetime import datetime
 # fecha=datetime.today()
 # print ("Hoy es: ", fecha)
-
+#############Este cambio lo voy  a hacer en MASTER
 #Convierte numeros separados por comma en lista y en tupla
 # numeros=input("Introduzca los numeros separados por coma: ")
 # lista=[numeros]
@@ -14,7 +18,7 @@
 # print (lista," ", type(lista))
 # print (tupla," ", type(tupla))
 
-#Muestra la extencion d eun archivo introducido
+#Muestra la extencion de un archivo introducido
 # archivo=input("Intro el nombre del archivo con su extención: ")
 # control=0
 # extencion=''
