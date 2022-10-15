@@ -17,7 +17,7 @@
 # tupla=eval(numeros)
 # print (lista," ", type(lista))
 # print (tupla," ", type(tupla))
-
+####Este cambio lo hice en rama titulobonito en la misma linea de en Master
 #Muestra la extencion d eun archivo introducido
 # archivo=input("Intro el nombre del archivo con su extención: ")
 # control=0
