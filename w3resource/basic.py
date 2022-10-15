@@ -31,5 +31,5 @@
 
 # voy a hacer un commmit acá <--
 # le cambie nombre al file y commit <--
-# Creare una nueva rama y le vy a agregar algo arriba bonito  
-# que pasa?
+# Creare una nueva rama y le voy a agregar algo arriba bonito  
+# punto antes de crear rama para cambios
