@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # ESTE ARCHIVO CONTIENELAS PRACTICAS LIBRES DEL W3RESOURCE
-=======
-# ESTE ARCHIVO CONTIENELAS PRACTICAS LIBRES DEL W3REOCURCE
->>>>>>> titulobonito
 # PROGAMANDO EN PYTHON 
 # NELSON JAVIER SALGUERO (njsocode@gmail.com)
 
@@ -21,13 +17,8 @@
 # tupla=eval(numeros)
 # print (lista," ", type(lista))
 # print (tupla," ", type(tupla))
-<<<<<<< HEAD
-
-#Muestra la extencion de un archivo introducido
-=======
 ####Este cambio lo hice en rama titulobonito en la misma linea de en Master
 #Muestra la extencion d eun archivo introducido
->>>>>>> titulobonito
 # archivo=input("Intro el nombre del archivo con su extención: ")
 # control=0
 # extencion=''
