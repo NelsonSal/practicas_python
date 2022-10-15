@@ -1,3 +1,7 @@
+# ESTE ARCHIVO CONTIENELAS PRACTICAS LIBRES DEL W3REOCURCE
+# PROGAMANDO EN PYTHON 
+# NELSON JAVIER SALGUERO (njsocode@gmail.com)
+
 #Imprime la verison del Python
 # import sys
 # print ("MI VERSION DE PYTON ES: ", sys.version, sys.version_info)
