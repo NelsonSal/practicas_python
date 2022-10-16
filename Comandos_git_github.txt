@@ -124,4 +124,10 @@ git tag -d nombre_del_tag (borra un tag en local)
 git push origin :refs/tags/nombre_del_tag (borra la referencia del tag en github)
 <<<ramas
 git branch (muestra las ramas)
-git checkout nombre_rama (pasa a esa rama)
+git checkout nombre_rama (pasa a esa rama) O LA CREA SI NO EXISTE
+git show-branch (muestra las ramas locales mas detallados)
+git show-branch --all (muestra las ramas locales y remotas mas detallados)
+gitk (abre un soft con la historia)
+git push origin rama (envia a remoto la rama estando (en esa rama?)
+
+git clone url (para clonar (bajar) el repo a mi maquina (sin ssh))
