@@ -120,3 +120,8 @@ git tag (muestra los tags)
 git show-ref --tags (muestra a que commit pertenece ese tag)
 history (sin git) muestra el historial de comandos realizados
 git push origin --tags (envia los tags a github)
+git tag -d nombre_del_tag (borra un tag en local)
+git push origin :refs/tags/nombre_del_tag (borra la referencia del tag en github)
+<<<ramas
+git branch (muestra las ramas)
+git checkout nombre_rama (pasa a esa rama)
