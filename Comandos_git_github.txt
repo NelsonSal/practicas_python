@@ -1,0 +1,122 @@
+TERMINAL ------------> Archivos de UBUNTU en Windows estan en \\wsl$  ejecutar consola con bash desde ejecutar de WINDOWS
+cd .. (cierra directorio y sube un nivel)
+cd - Enter  (toma este sitio como home para visualizar ruta)
+ls (lista Archivos y carpetas)
+ls -al (Lista tambien archivos ocultos y en lista)
+mkdir (Crea directorio)
+clear o ctrl + L (limpia pantalla)
+pwd (me muestra donde estoy)
+touch nombre.ext (crea un archivo)
+cat nombre.ext (visualiza el archivo(plano))
+history (muestra la historia de comandos numerados
+	!## para volver  a ejecutarlo)
+rm nombre.ext (Borra el archivo)
+comado --help (Muestra la ayuda disponible para ese comando)
+GIT
+rm -rf .git (retira git de la carpeta)
+git init (inicializa repositorio local en la carpeta donde estemos)
+code (abre VSC)
+git status (muestra el status de la carpeta, osea si hay cambios etc)
+git add nombre.ext (agrega ese archivo al track)
+git add .  (agrega al staging todos los archivos de la carpeta)
+git commit -m "comentario" (Envia los cambios del staging a repo)
+git commit -am "comentario" (envia a staging y luegole hace el commit en un solo paso)
+
+git config list (muestra las opciones de configuracion actuales)
+		debe aparecer quien somos, usuario y correo..si no....
+git config --global user.name "nombre" (para configurar usuario)
+git config --global user.email "e-mail" (para configurar correo)
+git log nombre.ext (muestra el historial de cambios de ese archivo)
+			--stat (opcional, muestra los cambios)
+git show nombre.ext (muestra los cambios de ese archivo)
+
+ESC SHIFT Z Z (fuerza el envio del commit sin comentarios)
+ESC i (permite introducir texto!!)
+q para salir <-----
+git diff numero_commit1 numero_commit2 (muestra las diferencias
+		entre un commit y otro)
+git reset numero_commit  (vuelve a una version anterior)
+			--hard (TODO VUELVE A SU ESTADO ANTERIOR, borra commits, etc)
+			--soft (REGRESA AL ANTERIOR PERO CONSERVA LO QUE ESTE EN STAGING)
+		HEAD (saca archivos del staging)
+q ENTER sale de un lado
+git checkout numero_commit nombre.ext (regresa el archivo en ese estado)
+git checkout master (regresa nuevamente al ultimo estado!!!)
+git rm (eliminar archivos de Git sin eliminar su historial del sistema de versiones)
+	--cached elimina del repo y del staging
+	--forced elimina del repo y del hdd local 
+
+SERVIDOR REMOTO:
+git clone url (clona el repositorio remoto a mi local (copia del master)
+git push (envio cambios al serv remoto (HEAD del master)
+git fetch (Trae los cambios del remoto al repo local pero no los copia a mis archivos)
+git merge (mezcla los cambios con mis archivos)
+git pull (trae los cambios al repo y a mis archivos)
+EL MERGE SE HACE DESDE LA RAMA PPAL (usualmente master)
+git branch (me muestra las ramas existentes)
+git merge nombre_de_la_rama
+!!git config --global init.defaultBranch main  hace que las ramas ppales se llamen main de ahi en adelante
+GITHUB
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWw
+https://github.com/NelsonSal/practicas_python.git
+echo "# practicas_python" >> README.md
+>>>>>>…or create a new repository on the command line
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/NelsonSal/practicas_python.git
+git push -u origin main
+>>>>>…or push an existing repository from the command line
+git remote add origin https://github.com/NelsonSal/practicas_python.git
+git branch -M main
+git push -u origin main
+>>>>>…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+git remote add origin https://github.com/NelsonSal/practicas_python.git (agrego mi repo remoto a mi local)
+git remote (me muestra que hay en el remoto)
+		-v (mas detalles)
+git push origin master (mande alorigin mi rama master (o main))
+git pull origin master (trae lo de remoto a mi local a la rama master)
+
+>>>>>>>>>>>>>>>>>>>>>>>>CREACION LLAVE PUBLICA Y PRIVADA
+ssh-keygen -t rsa -b 4096 -C "njsocode@gmail.com" (desde el home de la instalacion, osea le damos cd y alli estaremos en home)
+MENSAJE: Generating public/private rsa key pair.
+MENSAJE: Enter file in which to save the key (/c/Users/TEST/.ssh/id_rsa): (nos pide donde guardar la llave) DAR ENTER
+MENSAJE:Created directory '/c/Users/TEST/.ssh'.
+MENSAJE: Enter passphrase (empty for no passphrase):(pide una frase o password adicional, opcional lo dejamos vacio) le puse la de siempre
+Enter same passphrase again:
+Your identification has been saved in /c/Users/TEST/.ssh/id_rsa
+Your public key has been saved in /c/Users/TEST/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:ThKMco66sDbOQptakgf5mTR+BHX21c50C4oxtywmL3g njsocode@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|    . o   ..     |
+|   . = .o.. + .  |
+|  o o o .* * o . |
+| . *  ..+ + o .  |
+|o + o..+S.       |
+| O =. E+.        |
+|* X .. ..        |
+|+@ .             |
+|Oo.              |
++----[SHA256]-----+
+Configuracion en Windows
+<<<Comprobamos si el servidor esta corriendo
+eval $(ssh-agent -s)
+MENSAJE: Agent pid 2247<<<algo
+<<<Agregar la llave
+ssh-add (ruta o ~/.ssh.id_rsa):
+$ ssh-add ~/.ssh/id_rsa
+Enter passphrase for /c/Users/TEST/.ssh/id_rsa:(pass adicional que le configuramos
+Identity added: /c/Users/TEST/.ssh/id_rsa (njsocode@gmail.com)
+>>>>>>>>>>>>>>>>>>>> FIN <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+alias arbolito="git log --all --graph --decorate --oneline" (crea una palabra para ser usada con los comandos entre comillas)
+
+git tag -a v0.1 -m "aca primera version" numero hash(numero corto) (agregamos un tag con nuestra version y queda local)
+git tag (muestra los tags)
+git show-ref --tags (muestra a que commit pertenece ese tag)
+history (sin git) muestra el historial de comandos realizados
+git push origin --tags (envia los tags a github)
