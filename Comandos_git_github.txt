@@ -128,6 +128,27 @@ git checkout nombre_rama (pasa a esa rama) O LA CREA SI NO EXISTE
 git show-branch (muestra las ramas locales mas detallados)
 git show-branch --all (muestra las ramas locales y remotas mas detallados)
 gitk (abre un soft con la historia)
+git branch -D nombre_de_la_rama (borra esa rama)
 git push origin rama (envia a remoto la rama estando (en esa rama?)
 
 git clone url (para clonar (bajar) el repo a mi maquina (sin ssh))
+ <<Archivo .gitignore
+ *.jpg (ignora todos los .jpg)
+
+ git rebase master (desde rama a desaparecer de la historia) y luego
+ git rebase rama a desaparecer (desde rama ppal) y listo
+
+ git stash (guarda cambio para aplicarlos cuando yo quiera, los cambios se deshacen)
+ git stash list (me muestra los stash pendientes)
+ git stash pop (me aplica los cambios guardados)
+ git stash branch esta_rama (aplica los cambio guardados a esa rama)
+git stash drop (elimina los cambios que se guardaron)
+git clean (borra archivos indeseados)
+got clean --dry-run (me muestra que archivos va a borrar para verificar )
+git cherry-pick #commit (me trae a la rama actal los cambio hechos ne ese commit hechos en otra rama)
+
+git log (muestra historial)
+git log --oneline (mas sencillo, sin tanto detalle)
+git reflog (muestra TODO el historial)
+git reset (--SOFT o --HARD) #hash (REGRESA EL PROYECTO A ESE PUNTO)
+git commit --amend (agrega los ultimos cambios al ultimo commit).>>
