@@ -129,6 +129,8 @@ git show-branch (muestra las ramas locales mas detallados)
 git show-branch --all (muestra las ramas locales y remotas mas detallados)
 gitk (abre un soft con la historia)
 git branch -D nombre_de_la_rama (borra esa rama)
+git branch -r (ve ramas remotas)
+git branch -a (ve todas las ramas locales y remotas)
 git push origin rama (envia a remoto la rama estando (en esa rama?)
 
 git clone url (para clonar (bajar) el repo a mi maquina (sin ssh))
@@ -152,3 +154,15 @@ git log --oneline (mas sencillo, sin tanto detalle)
 git reflog (muestra TODO el historial)
 git reset (--SOFT o --HARD) #hash (REGRESA EL PROYECTO A ESE PUNTO)
 git commit --amend (agrega los ultimos cambios al ultimo commit).>>
+
+git grep palabreja (busca en todo el repositorio donde se uso esa palabreja)
+git grep -n palabreja (muestra exctamente en que linea en todo el repositorio donde se uso esa palabreja)
+git grep -c palabreja (muestra cuantas veces se se uso esa palabreja)
+git log -S "palabreja" (busca en los commits donde se uso esa palabreja)
+git shortlog (muestra que commits ha hecho cada uno)
+git shortlog -sn (muestra los que han hecho) --all (todos) --no-merges (sin los merge)
+ git config --global alias.nomnbrecomando "linea de comando(s)") <<<Ejecuta la linea de comando
+ git blame (opt -c) nombre_del_archivo (-L35,53 osea desde donde hasta donde)
+ 					(muestra quien hizo cada cambio en ese archivo)
+ got comando --help (muestra ayuda de ese comando)
+
